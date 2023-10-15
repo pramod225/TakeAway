@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <!--#region font families-->
+
+<!--  Inter Regular Text-->
+    <OnPlatform
+        x:TypeArguments="x:String"
+        x:Key="TextRegularInter">
+        <On
+            Platform="Android"
+            Value="Inter-VariableFont.ttf#Inter-VariableFont-Regular" />
+        <!--<On
+            Platform="iOS"
+            Value="SFProText-Heavy" />-->
+    </OnPlatform>
+
+     <OnPlatform
+        x:TypeArguments="x:String"
+        x:Key="TextBoldInter">
+        <On
+            Platform="Android"
+            Value="Inter-VariableFont.ttf#Inter-VariableFont-Bold" />
+        <!--<On
+            Platform="iOS"
+            Value="SFProText-Heavy" />-->
+    </OnPlatform>
+    <!--  Bold Text -->
+    <OnPlatform
+        x:TypeArguments="x:String"
+        x:Key="TextBold">
+        <On
+            Platform="Android"
+            Value="Anton-Regular.ttf#Anton-Regular-Bold" />
+        <!--<On
+            Platform="iOS"
+            Value="SFProText-Bold" />-->
+    </OnPlatform>
+
+
+<!--  SemiBold Text -->
+   <OnPlatform
+        x:TypeArguments="x:String"
+        x:Key="TextSemibold">
+        <On
+            Platform="Android"
+            Value="Anton-Regular.ttf#Anton-Regular-Bold" />
+        <!--<On
+            Platform="iOS"
+            Value="SFProText-Semibold" />-->
+    </OnPlatform>
+
+
+<!--  Medium Text -->
+   <OnPlatform
+        x:TypeArguments="x:String"
+        x:Key="TextMedium">
+        <On
+            Platform="Android"
+            Value="Anton-Regular.ttf#Anton-Regular-Medium" />
+        <!--<On
+            Platform="iOS"
+            Value="SFProText-Medium" />-->
+    </OnPlatform>
+
+
+<!--  Regular Text -->
+    <OnPlatform
+        x:TypeArguments="x:String"
+        x:Key="TextRegular">
+        <On
+            Platform="Android"
+            Value="Anton-Regular.ttf#Anton-Regular-Regular" />
+        <!--<On
+            Platform="iOS"
+            Value="SFProText-Regular" />-->
+    </OnPlatform>
+
+
+<!--  Light Text -->
+   <OnPlatform
+        x:TypeArguments="x:String"
+        x:Key="TextLight">
+        <On
+            Platform="Android"
+            Value="Anton-Regular.ttf#Anton-Regular-Light" />
+        <!--<On
+            Platform="iOS"
+            Value="SFProText-Light" />-->
+    </OnPlatform>
+    <!--font families end-->
+</ResourceDictionary>

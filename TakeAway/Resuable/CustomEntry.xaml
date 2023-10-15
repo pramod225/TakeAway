@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Name="this"
+             x:Class="TakeAway.Resuable.CustomEntry"
+            >
+    <ContentView.Content>
+    <Grid>
+        
+            <Entry
+                x:Name="InputControl"
+                   Focused="Handle_Focused"
+                   IsEnabled="{Binding IsEnabled, Source={x:Reference this}}"
+                   IsPassword="{Binding IsPassword, Source={x:Reference this}}"
+                   Keyboard="{Binding Keyboard, Source={x:Reference this}}"
+                   Text="{Binding Text, Source={x:Reference this}}"
+                   TextColor="{DynamicResource BlackTextColor}"
+                   Unfocused="Handle_Unfocused"
+                   />
+            <Label x:Name="PlaceholderControl"
+                   Margin="0"
+                   Padding="0"
+                   FontSize="18"
+                   HorizontalOptions="Start"
+                   InputTransparent="True"
+                   Text="{Binding Placeholder, Source={x:Reference this}}"
+                   TextColor="{Binding PlaceholderColor, Source={x:Reference InputControl}}"
+                   VerticalOptions="Center" />
+     </Grid>
+     </ContentView.Content>
+</ContentView>
+

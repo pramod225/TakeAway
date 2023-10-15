@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resx="clr-namespace:TakeAway.Resx"
+             xmlns:customView="clr-namespace:TakeAway.Resuable"
+             x:Class="TakeAway.Components.Dashboard.Views.RestaurantProfilePage"
+             Title="RestaurantProfilePage">
+   <ContentPage.Content>
+        <Grid Padding="0,20"
+              RowDefinitions=" Auto,1, 100, Auto ,Auto">
+            <Grid Grid.Row="0" Margin="10,-10,10,5">
+                <Image
+                    Style="{DynamicResource CybeyLogo}"/>
+                <Image
+                    Style="{DynamicResource ListMenu}"/>
+                <Image
+                    Style="{DynamicResource Basket}"/>
+
+          <Line Grid.Row="1"
+               Margin="0,40,0,10"
+              Style="{DynamicResource DashLine}"/>
+         </Grid>
+            <VerticalStackLayout Grid.Row="2">
+                                
+            <ScrollView
+                x:Name="RootScrollView"
+                Scrolled="RootScrollView_Scrolled">
+                <VerticalStackLayout
+                    >
+                <AbsoluteLayout
+                    x:Name="ImageLayout"
+                    AbsoluteLayout.LayoutFlags="WidthProportional"
+                    >
+                        <Image
+                            x:Name="Picture"
+                            Margin="0"
+                            AbsoluteLayout.LayoutFlags="All"
+                            AbsoluteLayout.LayoutBounds="0,0,1,1"
+                            HeightRequest="410"
+                            Aspect="AspectFill"
+                            Source="Rectangle"/>
+
+                        <BoxView
+                            x:Name="ImageOverlay"
+                            Opacity="0"
+                            AbsoluteLayout.LayoutFlags="All"
+                            AbsoluteLayout.LayoutBounds="0,0,1,1"
+                            BackgroundColor="Transparent" />
+
+                </AbsoluteLayout>
+               
+                 
+            <Grid Grid.Row="3" Margin="0,170"
+                  x:Name="TabsLayout"
+                 
+                  >
+                <Path 
+                Data="M0 31.6722C0 31.6722 148 0 195 0C242 0 390 31.6722 390 31.6722V552H0V31.6722Z"
+                  Aspect="Fill" Fill="#EFEEEC" 
+                    VerticalOptions="Fill"/>
+                    <StackLayout
+                            x:Name="EmptyLayout"
+                                 Margin="0,-60,0,0"
+                                 HorizontalOptions="StartAndExpand"
+                                 >
+                        <Grid
+                            HeightRequest="130" WidthRequest="130" HorizontalOptions="Center"
+                           VerticalOptions="Center" >
+                            <Ellipse Stroke="#EFEEEC" StrokeThickness="1" Aspect="Fill"
+                                 />
+                            <Frame Padding="0"
+                                   HeightRequest="83"
+                                   WidthRequest="83"
+                                   HorizontalOptions="CenterAndExpand"
+                                   VerticalOptions="CenterAndExpand"
+                                   CornerRadius="100">
+                            <Image x:Name="BannerLogo" Source="Rectangle"
+                               Aspect="AspectFill"
+                            />
+                            </Frame>
+                       </Grid>
+                        <Label Grid.Row="1"
+                         Text="Burger King" TextTransform="Uppercase"
+                         Style="{DynamicResource Font30BlackColor}"/>
+
+                        <Grid Grid.Row="3"
+                              HorizontalOptions="FillAndExpand"
+                              >
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                        <Image Grid.Column="1"
+                               Source="compass"
+                               Margin="10,-28,0,0"
+                               HorizontalOptions="StartAndExpand"
+                            />
+                        <Label Margin="25,0"
+                               Grid.Column="2" 
+                               Style="{DynamicResource Font12BlackColor}"
+                               LineBreakMode="WordWrap"
+                               
+                               Text="Lala Jagat Narayan Marg First Floor, PP Tower, Plot No C1,&#10;2, 3, Netaji Subhash Place, Shakurpur, New Delhi, &#10;
+                                     Delhi 110034."
+                                      />
+                                        
+                         
+                        </Grid>
+                        <Line Grid.Row="3"
+                              Margin="13,0"
+                            Style="{DynamicResource DashLine}"
+                             />
+                        <Grid Grid.Row="3"
+                              Padding="15,5">
+                        <Image
+                            HorizontalOptions="Start"
+                            Source="alarm"
+                               />
+                            <Label Text="9 M"
+                                   Margin="15,0,0,0"
+                                   HorizontalTextAlignment="Start"
+                                   Style="{DynamicResource Font12BlackColor}"/>
+                         <Image 
+                            Source="vector"
+                             Margin="0,0,90,0"
+                               HorizontalOptions="Center"/>
+                            <Label Text="9 AM - 10PM"
+                                   HorizontalTextAlignment="Center"
+                                   Style="{DynamicResource Font12BlackColor}"/>
+                         <Image
+                             Source="star"
+                             Margin="0,0,10,0"
+                               HorizontalOptions="End"/>
+                                 <Label Text="5"
+                                        HorizontalTextAlignment="End"
+                                   Style="{DynamicResource Font12BlackColor}"/>
+
+                             </Grid>
+                         <Line Grid.Row="4"
+                               Margin="13,0"
+                            Style="{DynamicResource DashLine}"
+                              />
+
+                    <HorizontalStackLayout
+                            Grid.Row="5">
+                        <CarouselView x:Name="slider"
+                                ItemsSource="{Binding LatestItems}"
+                                 HeightRequest="20">
+                            <CarouselView.ItemsLayout>
+                                <LinearItemsLayout Orientation="Horizontal" />
+                            </CarouselView.ItemsLayout>
+                            <CarouselView.ItemTemplate>
+                                <DataTemplate>
+                                    <Label Text="{Binding CatagoriesNames}"
+                               Style="{DynamicResource Font12BlackColor}"/>
+                                </DataTemplate>
+                            </CarouselView.ItemTemplate>
+                        </CarouselView>
+                    </HorizontalStackLayout>
+                    <Line Grid.Row="5"
+                          Margin="13,0"
+                            Style="{DynamicResource DashLine}"
+                              />
+                        <customView:CustomDetailsView
+                            MainText="Burger King"
+                            HeartImageSource="heart"
+                            VegorNonImageSource="green"
+                            DescriptionText="Nice cooking food"
+                            AlarmImageSource="alarm"
+                            StarImageSource="star"
+                            LeftText="15 M"
+                            RightText="3"
+                            PlusImageSource="plus"
+                            MinusImageSource="minus"
+                            IncrementOrDecrementText="2"
+                            MainImageSource="foodicon"
+
+                            />
+                </StackLayout>
+
+            </Grid>
+                    </VerticalStackLayout>
+                </ScrollView>
+                </VerticalStackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

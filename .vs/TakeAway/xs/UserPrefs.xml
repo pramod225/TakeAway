@@ -1,0 +1,85 @@
+﻿<Properties StartupConfiguration="{C04B7514-73BE-4835-91DA-0FB63C8B9553}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TakeAway/Components /Dashboard/Views/DashbaordPage.xaml">
+    <Files>
+      <File FileName="TakeAway/MainPage.xaml.cs" />
+      <File FileName="TakeAway.Model/Models/Login.cs" />
+      <File FileName="TakeAway.Model/Models/Register.cs" />
+      <File FileName="TakeAway.Model/Models/Restraurant.cs" />
+      <File FileName="TakeAway.Model/Models/SignUp.cs" />
+      <File FileName="TakeAway/Components /Registrations/ViewModels/RegisterViewModel.cs" />
+      <File FileName="TakeAway/Components /Registrations/Services/RegistrationService.cs" />
+      <File FileName="TakeAway/Components /Registrations/Services/IRegistrationService.cs" />
+      <File FileName="TakeAway/Components /Dashboard/Services/IRestaurantService.cs" />
+      <File FileName="TakeAway/Components /Dashboard/Services/RestaurantService.cs" />
+      <File FileName="TakeAway/Components /Logins/ViewModels/LoginViewModel.cs" />
+      <File FileName="TakeAway/Components /Dashboard/ViewModels/DashBoardViewModel.cs" />
+      <File FileName="TakeAway/Components /Logins/Services/ILoginService.cs" />
+      <File FileName="TakeAway/Components /Logins/Services/LoginService.cs" />
+      <File FileName="../../../../usr/local/share/dotnet/packs/Microsoft.MacCatalyst.Sdk/16.1.229/tools/msbuild/iOS/Xamarin.Shared.targets" />
+      <File FileName="TakeAway/AppShell.xaml.cs" />
+      <File FileName="TakeAway/App.xaml.cs" />
+      <File FileName="TakeAway/Components /Logins/Views/LoginPage.xaml.cs" />
+      <File FileName="TakeAway/Components /Dashboard/Views/DashbaordPage.xaml.cs" />
+      <File FileName="TakeAway/Components /Dashboard/Views/FullDetailsPage.xaml.cs" />
+      <File FileName="TakeAway/Components /Dashboard/Views/RestaurantProfilePage.xaml.cs" />
+      <File FileName="TakeAway/Resuable/CustomFrame.xaml.cs" />
+      <File FileName="TakeAway/Components /Base/Services/ConnectionCheckedService.cs" />
+      <File FileName="TakeAway/Resuable/CustomDetailsView.xaml.cs" />
+      <File FileName="TakeAway/Platforms/Android/MainActivity.cs" />
+      <File FileName="TakeAway/Resources/Splash/splash.svg" />
+      <File FileName="TakeAway/TakeAway.csproj" />
+      <File FileName="TakeAway/Resuable/CustomEntry.xaml.cs" />
+      <File FileName="TakeAway/Platforms/Android/MainApplication.cs" />
+      <File FileName="TakeAway/Resources/Images/splash.xml" />
+      <File FileName="TakeAway/MainPage.xaml" />
+      <File FileName="TakeAway/AppShell.xaml" />
+      <File FileName="TakeAway/Components /Logins/Views/LoginPage.xaml" />
+      <File FileName="TakeAway/Components /Base/Views/BasePage.xaml" />
+      <File FileName="TakeAway/App.xaml" />
+      <File FileName="TakeAway/Resources/Styles/Font.xaml" />
+      <File FileName="TakeAway/Components /Dashboard/Views/FullDetailsPage.xaml" />
+      <File FileName="TakeAway/Components /Dashboard/Views/RestaurantProfilePage.xaml" />
+      <File FileName="TakeAway/Resuable/CustomDetailsView.xaml" />
+      <File FileName="TakeAway/Components /Dashboard/Views/DashbaordPage.xaml" Line="46" Column="38" />
+      <File FileName="TakeAway/Resuable/CustomFrame.xaml" />
+      <File FileName="TakeAway/Resuable/CustomEntry.xaml" />
+      <File FileName="TakeAway/Resources/Styles/Colors.xaml" />
+      <File FileName="TakeAway/Resources/Styles/Styles.xaml" />
+      <File FileName="TakeAway/Resources/Styles/Labels.xaml" />
+      <File FileName="../../../../usr/local/share/dotnet/packs/Microsoft.Android.Sdk.Darwin/32.0.476/tools/Xamarin.Android.Aapt2.targets" />
+      <File FileName="TakeAway/Components /Registrations/Views/RegistrationPage.xaml.cs" />
+      <File FileName="TakeAway/IOCContainer/RegisterViews.cs" />
+      <File FileName="TakeAway/Components /Base/Views/Main.xaml" />
+      <File FileName="TakeAway/Components /Base/Views/Main.xaml.cs" />
+      <File FileName="TakeAway/IOCContainer/RegisterViewModels.cs" />
+      <File FileName="TakeAway/IOCContainer/RegisterAppServices.cs" />
+      <File FileName="TakeAway/Components /Dashboard/Views/ProductProfilePage.xaml" />
+      <File FileName="TakeAway/Components /Dashboard/Views/ProductProfilePage.xaml.cs" />
+      <File FileName="TakeAway/Components /Dashboard/Views/SubProductProfilePage.xaml" />
+      <File FileName="TakeAway/Components /Dashboard/Views/ProductProfileCheckoputPage.xaml.cs" />
+      <File FileName="TakeAway/Components /Base/ViewModels/MainViewModel.cs" />
+      <File FileName="TakeAway/Components /ForgotPassword/Views/ForgotPasswordPage.xaml" />
+      <File FileName="TakeAway/Components /ForgotPassword/Views/ForgotPasswordPage.xaml.cs" />
+      <File FileName="TakeAway/Components /Registrations/Views/RegistrationPage.xaml" />
+      <File FileName="TakeAway/Components /Dashboard/Views/ProductProfileCheckoutPage.xaml" />
+      <File FileName="TakeAway/Resources/Styles/Imagess.xaml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Pixel_4_XL_API_29" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.1.0.1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/administrator/Desktop/TakeAway/TakeAway/Components /Dashboard/Views/DashbaordPage.xaml.cs" relfile="TakeAway/Components /Dashboard/Views/DashbaordPage.xaml.cs" line="24" column="1" />
+      <Breakpoint file="/Users/administrator/Desktop/TakeAway/TakeAway/Components /Dashboard/ViewModels/DashBoardViewModel.cs" relfile="TakeAway/Components /Dashboard/ViewModels/DashBoardViewModel.cs" line="45" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.TakeAway PreferredExecutionTarget="Android.Pixel_4_XL_API_29" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

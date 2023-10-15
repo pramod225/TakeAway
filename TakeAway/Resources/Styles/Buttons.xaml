@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary
+        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+<ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Colors.xaml" />
+     <ResourceDictionary Source="Font.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    <Style x:Key="Height40BlueButtonColor" TargetType="Button">
+        <Setter Property="TextColor" Value="{DynamicResource WhiteTextColor}"/>
+        <Setter Property="WidthRequest" Value="150"/>
+        <Setter Property="FontFamily" Value="{DynamicResource TextRegularInter}"/>
+        <Setter Property="CornerRadius" Value="50"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="BackgroundColor" Value="{DynamicResource  BlueTextColor}"/>
+    </Style>
+    <Style x:Key="Height40WhiteButtonColor" TargetType="Button">
+        <Setter Property="TextColor" Value="{DynamicResource  BlueTextColor}"/>
+        <Setter Property="CornerRadius" Value="50"/>
+        <Setter Property="BorderColor" Value="{DynamicResource BlueTextColor}"/>
+         <Setter Property="HeightRequest" Value="45"/>
+        <Setter Property="FontFamily" Value="{DynamicResource TextRegularInter}"/>
+        <Setter Property="BorderWidth" Value="1"/>
+         <Setter Property="FontSize" Value="18"/>
+        <Setter Property="BackgroundColor" Value="{DynamicResource BlurWhiteColor}"/>
+        <Setter Property="WidthRequest" Value="150"/>
+        
+    </Style>
+    
+   
+    </ResourceDictionary>
+

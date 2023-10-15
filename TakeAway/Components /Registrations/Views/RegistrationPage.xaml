@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:BasePage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                xmlns:pages="clr-namespace:TakeAway.Components.Base.Views"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TakeAway.Components.Registrations.Views.RegistrationPage"
+             xmlns:entry="clr-namespace:TakeAway.Resuable"
+             xmlns:resx="clr-namespace:TakeAway.Resx"
+             Title="RegistrationPage">
+    <pages:BasePage.Content>
+        <Grid
+            Padding="15"
+           RowDefinitions="Auto,Auto,Auto,Auto">
+            <Image
+                Style="{x:DynamicResource CybeyLogo}"/>
+       <Label Grid.Row="1"
+              Margin="0,30,0,0"
+                Text="{x:Static resx:AppResources.Register}"
+              Style="{DynamicResource  Font54BlackColor}"/>
+             <Line Grid.Row="2"
+                  Y1="0.5" X2="385" Y2="0.5" Stroke="#687C9F" StrokeDashArray="2 2"
+             HorizontalOptions="FillAndExpand"/>
+            <StackLayout
+                Margin="0,40"
+                Grid.Row="2"
+                Spacing="30">
+                <StackLayout>
+                <entry:CustomEntry 
+                        x:Name="TxtName" Text="{Binding Register.Name,Mode=TwoWay}"
+                                   Placeholder="{x:Static resx:AppResources.Name}"
+                                   IsValidationEnabled="True"/>
+                </StackLayout>
+                <StackLayout>
+                    <entry:CustomEntry x:Name="TxtEmail" Text="{Binding Register.Email,Mode=TwoWay}"
+                                   Placeholder="{x:Static resx:AppResources.Email}"
+                                   IsEntryTextValid="True"
+                                   IsEnabled="True"
+                                   Keyboard="Email"/>
+
+                </StackLayout>
+                
+                   <StackLayout>
+                    <entry:CustomEntry x:Name="TxtPhoneNo"
+                                       Text="{Binding Register.PhoneNo,Mode=TwoWay}"
+                                       Placeholder="{x:Static resx:AppResources.PhoneNo}"
+                                       Keyboard="Numeric"
+                                       IsValidationEnabled="True"/>
+                    <!--<entry:CustomEntry.Behaviors>
+                        <behavior:PhoneValidationView/>
+                    </entry:CustomEntry.Behaviors>-->
+
+                </StackLayout> 
+                <StackLayout>
+                     <entry:CustomEntry x:Name="TxtPassword"
+                                        IsValidationEnabled="True"
+                                        Text="{Binding Register.Password,Mode=TwoWay}" Placeholder="{x:Static resx:AppResources.Password}" IsPassword="True">
+                    <!--<entry:CustomEntry.Behaviors>
+                    <behavior:PasswordValidationBehaviorView/>
+                    </entry:CustomEntry.Behaviors>-->
+                </entry:CustomEntry>
+
+                </StackLayout>
+               
+            </StackLayout>
+             <Button Grid.Row="3"
+                   HorizontalOptions="EndAndExpand"
+                   Text="{x:Static resx:AppResources.Register}"
+                   Style="{DynamicResource Height40WhiteButtonColor}"
+                   Command="{Binding SaveCommand}" />
+
+        </Grid>
+    </pages:BasePage.Content>
+    
+</pages:BasePage>

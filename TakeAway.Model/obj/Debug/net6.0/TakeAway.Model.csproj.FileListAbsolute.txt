@@ -1,0 +1,12 @@
+/Users/administrator/Desktop/TakeAway/TakeAway.Model/bin/Debug/net6.0/TakeAway.Model.deps.json
+/Users/administrator/Desktop/TakeAway/TakeAway.Model/bin/Debug/net6.0/TakeAway.Model.dll
+/Users/administrator/Desktop/TakeAway/TakeAway.Model/bin/Debug/net6.0/TakeAway.Model.pdb
+/Users/administrator/Desktop/TakeAway/TakeAway.Model/obj/Debug/net6.0/TakeAway.Model.csproj.AssemblyReference.cache
+/Users/administrator/Desktop/TakeAway/TakeAway.Model/obj/Debug/net6.0/TakeAway.Model.GeneratedMSBuildEditorConfig.editorconfig
+/Users/administrator/Desktop/TakeAway/TakeAway.Model/obj/Debug/net6.0/TakeAway.Model.AssemblyInfoInputs.cache
+/Users/administrator/Desktop/TakeAway/TakeAway.Model/obj/Debug/net6.0/TakeAway.Model.AssemblyInfo.cs
+/Users/administrator/Desktop/TakeAway/TakeAway.Model/obj/Debug/net6.0/TakeAway.Model.csproj.CoreCompileInputs.cache
+/Users/administrator/Desktop/TakeAway/TakeAway.Model/obj/Debug/net6.0/TakeAway.Model.dll
+/Users/administrator/Desktop/TakeAway/TakeAway.Model/obj/Debug/net6.0/refint/TakeAway.Model.dll
+/Users/administrator/Desktop/TakeAway/TakeAway.Model/obj/Debug/net6.0/TakeAway.Model.pdb
+/Users/administrator/Desktop/TakeAway/TakeAway.Model/obj/Debug/net6.0/ref/TakeAway.Model.dll

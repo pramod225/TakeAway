@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:BasePage  xmlns:views="clr-namespace:TakeAway.Components.Base.Views"
+              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TakeAway.Components.Base.Views.Main"
+              xmlns:resx="clr-namespace:TakeAway.Resx"
+             >
+    <views:BasePage.Content>
+    <Grid
+            
+            Padding="0,20,0,0"
+            RowDefinitions="Auto,Auto,Auto,Auto">
+            <Image
+                Style="{DynamicResource CybeyLogo}"/>
+            <Label Grid.Row="1"
+                Padding="20"
+                VerticalOptions="StartAndExpand"
+                Text="{x:Static resx:AppResources.FirstPageDescription}"
+                Style="{DynamicResource Font77BlackColor}"/>
+            <Label Grid.Row="2"
+                   Padding="20"
+                    HorizontalOptions="StartAndExpand"
+                    Text="{x:Static resx:AppResources.WhenYouAreReady}"
+                   Style="{DynamicResource Font44BlackColor}"/>
+            <StackLayout
+                Margin="0,80"
+                         VerticalOptions="EndAndExpand"
+                         Grid.Row="4"
+                        Style="{DynamicResource StackLayoutBackgroundBlurColor}"
+                         >
+                <StackLayout
+                       Spacing="40"
+                       Margin="0,20,0,-20"
+                       Orientation="Horizontal"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="StartAndExpand"
+                        >
+
+                    <Button 
+                        Text="{x:Static resx:AppResources.Login}"
+                        Style="{DynamicResource  Height40BlueButtonColor}"
+                        Command="{Binding LoginCommand}"/>
+
+                    <Button 
+                          Text="{x:Static resx:AppResources.Register}"
+                           Style="{DynamicResource  Height40WhiteButtonColor}"
+                           Command="{Binding RegisterCommand}"/>
+                </StackLayout>
+                <StackLayout
+                         VerticalOptions="StartAndExpand"
+                         HorizontalOptions="CenterAndExpand">
+                    <Label 
+                             Text="{x:Static resx:AppResources.TermAndCondition}"
+                             Style="{DynamicResource Font14RegularTextColor}"
+                             TextDecorations="Underline"/>
+
+                    <Label HorizontalTextAlignment="Center"
+                        Text="{x:Static resx:AppResources.Cybey2022}"
+                        Style="{DynamicResource Font14RegularTextColor}"/>
+                </StackLayout>
+
+            </StackLayout>
+        </Grid>
+    </views:BasePage.Content>
+</views:BasePage>

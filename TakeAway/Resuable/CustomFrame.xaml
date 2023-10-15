@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 x:Name="customFrame"
+                 x:Class="TakeAway.Resuable.CustomFrame"
+                 >
+    <ContentView.Content>
+  <VerticalStackLayout Margin="0,10">
+    <Frame
+        BackgroundColor="{DynamicResource FrameGrayColor}"
+        CornerRadius="16"
+        HasShadow="True"
+        HeightRequest="110"
+        WidthRequest="360"
+        Padding="10,10">
+                        
+      <Grid ColumnDefinitions="103.5,*">
+          <VerticalStackLayout Grid.Column="0">
+              <Frame CornerRadius="15"
+                     HeightRequest="90">
+                <Image Source="{Binding MainImageSource,Source={x:Reference customFrame}}"
+                    Aspect="Fill"
+                    WidthRequest="103.5"
+                    HeightRequest="90"/>
+              </Frame>
+
+          </VerticalStackLayout>
+          <Grid Grid.Column="1" Margin="0,-10" >
+                <Grid RowDefinitions="60*,20*">
+                      <Grid Grid.Row="0"
+                            ColumnDefinitions="*,.1*" >
+                         <VerticalStackLayout Grid.Column="0">
+                            <Label Text="{Binding MainText, Source={x:Reference customFrame}}"
+                                HorizontalTextAlignment="Start"
+                                Margin="10,0"
+                                Style="{DynamicResource Font18BlackColorAnton}"/>
+                            
+                            <ImageButton Source="{Binding CompassImageSource,Source={x:Reference customFrame}}"
+                                            HorizontalOptions="Start"
+                                            Margin="10,2"/>
+                            <Label Text="{Binding AddressText, Source={x:Reference customFrame}}"
+                                    Margin="30,-20"
+                                    HorizontalTextAlignment="Start"
+                                    Style="{DynamicResource Font18BlackColor}"/>
+                         </VerticalStackLayout>
+                            <ImageButton x:Name="heartButton"
+                                         Grid.Column="1"
+                                         VerticalOptions="Start"
+                                         Margin="0,10"
+                                         Clicked="OnHeartButtonClicked"
+                                Source="heart_fill"/>
+                      </Grid>
+
+                      <VerticalStackLayout Grid.Row="1">
+                            <Line 
+                                VerticalOptions="End"
+                                Margin="10,0,0,0"
+                                Style="{DynamicResource DashMainFrameLine}"/>
+                            <Grid ColumnDefinitions="*,*,*">
+                                    <Grid Grid.Column="0" >
+                                        <ImageButton Source="{Binding AlarmImageSource,Source={x:Reference customFrame}}"
+                                                     Margin="10,0,0,0"
+                                                     HorizontalOptions="Start"/>
+                                        <Label
+                                            HorizontalTextAlignment="Center"
+                                            Margin="-8,0,0,0"
+                                            Text="{Binding LeftText, Source={x:Reference customFrame}, StringFormat='{0}M'}"
+                                            Style="{DynamicResource Font12BlackColor}"/>
+
+                                    </Grid>
+
+                                     <HorizontalStackLayout Grid.Column="1" >
+                                        <ImageButton Source="{Binding VectorImageSource,Source={x:Reference customFrame}}"
+                                                     HorizontalOptions="Start"/>
+                                        <Label
+                                            HorizontalTextAlignment="End"
+                                            Margin="0"
+                                            Text="{Binding CenterText,Source={x:Reference customFrame},StringFormat='{0}AM-{1}PM'}"
+                                            Style="{DynamicResource Font12BlackColor}"/>
+
+                                    </HorizontalStackLayout>
+                                     <Grid Grid.Column="2" >
+                                        <ImageButton Source="{Binding StarImageSource,Source={x:Reference customFrame}}"
+                                                     Margin="0,0,10,0"
+                                                     Clicked="OnStarButtonClicked"
+                                                     HorizontalOptions="End"
+                                                     />
+                                        <Label x:Name="numberLabel"
+                                            HorizontalOptions="End"
+                                            Text="{Binding RightText,Source={x:Reference customFrame}}"
+                                            Style="{DynamicResource Font12BlackColor}"/>
+
+                                    </Grid>
+
+                            </Grid>
+                      </VerticalStackLayout>
+                </Grid>
+          </Grid>
+      </Grid>
+                
+    </Frame>
+            <VerticalStackLayout.GestureRecognizers>
+                 <TapGestureRecognizer
+                    Tapped="ItemSelectedTapped"
+                    Command="{Binding ItemSelectedCommand, Source={x:Reference customFrame}}"
+                    CommandParameter="{Binding .}">
+                </TapGestureRecognizer>
+            </VerticalStackLayout.GestureRecognizers>
+  </VerticalStackLayout>
+    </ContentView.Content>
+</ContentView>

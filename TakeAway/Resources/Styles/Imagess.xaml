@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary
+        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+<ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Colors.xaml" />
+     <ResourceDictionary Source="Font.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+        <Style x:Key="CybeyLogo" TargetType="Image">
+            <Setter Property="HorizontalOptions" Value="StartAndExpand"/>
+            <Setter Property="Source" Value="cybeylogo"/>
+            <Setter Property="HeightRequest" Value="35"/>
+            <Setter Property="WidthRequest" Value="85"/>
+        </Style>
+         <Style x:Key="ListMenu" TargetType="Image">
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="Source" Value="list_menu"/>
+            <Setter Property="HeightRequest" Value="21"/>
+            <Setter Property="WidthRequest" Value="40"/>
+        </Style>
+         <Style x:Key="Basket" TargetType="Image">
+            <Setter Property="HorizontalOptions" Value="EndAndExpand"/>
+            <Setter Property="Source" Value="bascket"/>
+            <Setter Property="HeightRequest" Value="35"/>
+            <Setter Property="WidthRequest" Value="27"/>
+        </Style>
+
+        <Style x:Key="PlusOrMinusSign" TargetType="ImageButton">
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="HeightRequest" Value="22"/>
+            <Setter Property="WidthRequest" Value="22"/>
+        </Style>
+
+        <Style x:Key="DashLine" TargetType="Line">
+            <Setter Property="Y1" Value="0.5"/>
+            <Setter Property="X2" Value="1200"/>
+            <Setter Property="Y2" Value="0.5"/>
+            <Setter Property="StrokeDashArray" Value="2 2"/>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            <Setter Property="Stroke" Value="#687C9F"/>
+        </Style>
+         <Style x:Key="DashFrameLine" TargetType="Line">
+            <Setter Property="Y1" Value="0.5"/>
+            <Setter Property="X2" Value="1200"/>
+            <Setter Property="Y2" Value="0.5"/>
+            <Setter Property="StrokeDashArray" Value="2 2"/>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            <Setter Property="Stroke" Value="#687C9F"/>
+        </Style>
+         <Style x:Key="DashMainFrameLine" TargetType="Line">
+            <Setter Property="Y1" Value="0.5"/>
+            <Setter Property="X2" Value="1200"/>
+            <Setter Property="Y2" Value="0.5"/>
+            <Setter Property="StrokeDashArray" Value="2 2"/>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            <Setter Property="Stroke" Value="#687C9F"/>
+        </Style>
+    </ResourceDictionary>
+
+

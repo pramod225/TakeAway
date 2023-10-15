@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TakeAway.Components.Dashboard.Views.SubProductProfilePage"
+              xmlns:customView="clr-namespace:TakeAway.Resuable"
+             Title="SubProductProfilePage">
+    <Grid RowDefinitions="80,Auto,*">
+       <Grid Grid.Row="0" Padding="10" BackgroundColor="{DynamicResource EllipseColor}">
+               <Image
+                    Style="{DynamicResource CybeyLogo}"
+                   HorizontalOptions="Start" />
+                <Image
+                    Style="{DynamicResource ListMenu}"
+                    HorizontalOptions="Center"/>
+               
+            <Line 
+                Margin="0,55,0,0"
+                Style="{DynamicResource DashLine}"/>
+            </Grid>
+        <VerticalStackLayout Grid.Row="1"
+                             Margin="0,-10,0,0">
+            <Label Text="ORDER REVIEW" Style="{DynamicResource Font30EllipseBlackColor}"/>
+            <Path Data ="M0 41.3278C0 41.3278 148 73 195 73C242 73 390 41.3278 410 41.3278V0H0V41.3278Z" Fill="#EFEEEC"/>
+        </VerticalStackLayout>
+        <!--<CollectionView>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <VerticalStackLayout Grid.Row="2" Spacing="10">
+                        <cf:CustomFrame
+                            MainImageSource="rectangle"
+                            MainText="restraurant"
+                            CompassImageSource="compass"
+                            AddressText="addresss"
+                            AlarmImageSource="alarm"
+                            LeftText="7P"
+                            RightText="Dine In"/>
+                    </VerticalStackLayout>
+
+                </DataTemplate>
+
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>-->
+               <VerticalStackLayout Grid.Row="2" Spacing="10">
+                      <customView:CustomDetailsView
+                            MainText="Burger King"
+                            DescriptionText="Nice cooking food"
+                            PlusImageSource="plus"
+                            MinusImageSource="minus"
+                            IncrementOrDecrementText="2"
+                            MainImageSource="foodicon"
+                            />
+                    </VerticalStackLayout>      
+          
+    </Grid>
+       
+</ContentPage>

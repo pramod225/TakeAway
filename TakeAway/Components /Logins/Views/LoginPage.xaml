@@ -1,0 +1,66 @@
+﻿<pages:BasePage  xmlns:pages="clr-namespace:TakeAway.Components.Base.Views"
+                 xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:entry="clr-namespace:TakeAway.Resuable"
+             xmlns:resx="clr-namespace:TakeAway.Resx"
+             x:Class="TakeAway.Components.Logins.Views.LoginPage"
+             >
+    <pages:BasePage.Content>
+        <Grid RowDefinitions="90,Auto,Auto,*" Padding="20" >
+            <VerticalStackLayout Grid.Row="0" >
+                <Image
+                Style="{DynamicResource CybeyLogo}"/>
+
+            </VerticalStackLayout>
+            <VerticalStackLayout Grid.Row="1">
+            <Label 
+                Text="{x:Static resx:AppResources.Login}"
+                Style="{DynamicResource  Font54BlackColor}"/>
+            <Line 
+                  Y1="0.5" X2="385" Y2="0.5" Stroke="#687C9F" StrokeDashArray="2 2"
+             HorizontalOptions="FillAndExpand"/>
+
+            </VerticalStackLayout>
+
+            <Grid Grid.Row="2" RowDefinitions="*,*" RowSpacing="20" Margin="0,50" >
+                <VerticalStackLayout Grid.Row="0">
+                 <entry:CustomEntry x:Name="email" Text="{Binding Login.UserName,Mode=TwoWay}"
+                              Placeholder="{x:Static resx:AppResources.Email}"
+                              />
+                <Border  BackgroundColor="{DynamicResource Primary }"
+                         />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Row="1">
+                    <entry:CustomEntry x:Name="password" Text="{Binding Login.Password,Mode=TwoWay}" Placeholder="{x:Static resx:AppResources.Password}" IsPassword="True"/>
+                    <Border BackgroundColor="{DynamicResource Primary }"/>
+                </VerticalStackLayout>
+            </Grid>
+           
+            <VerticalStackLayout Grid.Row="3" VerticalOptions="Start" Margin="0,20">
+                <Button 
+                   HorizontalOptions="EndAndExpand"
+                   Text="{x:Static resx:AppResources.Login}"
+                   Command="{Binding LoginsCommand}"
+                   Style="{DynamicResource Height40WhiteButtonColor}"/>
+            <Label 
+                  Text="{x:Static resx:AppResources.ForgotPassword}"
+                  Style="{DynamicResource Font18BlackColor}"
+                  >
+               <Label.GestureRecognizers>
+                   <TapGestureRecognizer Command="{Binding ForgotPasswordCommand }"/>
+               </Label.GestureRecognizers>
+           </Label>
+
+           <Label 
+                  Text="{x:Static resx:AppResources.SignUp}"
+                  Style="{DynamicResource Font18BlackColor}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding SignUpCommand}"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            </VerticalStackLayout>
+        </Grid>
+    </pages:BasePage.Content>
+</pages:BasePage>
+

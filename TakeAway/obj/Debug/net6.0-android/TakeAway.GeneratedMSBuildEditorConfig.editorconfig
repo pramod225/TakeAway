@@ -1,0 +1,161 @@
+is_global = true
+build_property.TargetFramework = net6.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TakeAway
+build_property.ProjectDir = /Users/administrator/Desktop/TakeAway/TakeAway/
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Components /Base/Views/BasePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Components_.Base.Views.BasePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Components /Base/Views/BasePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Components /Base/Views/BasePage.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Components /Base/Views/Main.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Components_.Base.Views.Main.xaml
+build_metadata.AdditionalFiles.TargetPath = Components /Base/Views/Main.xaml
+build_metadata.AdditionalFiles.RelativePath = Components /Base/Views/Main.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Components /Dashboard/Views/DashbaordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Components_.Dashboard.Views.DashbaordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Components /Dashboard/Views/DashbaordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Components /Dashboard/Views/DashbaordPage.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Components /Dashboard/Views/FullDetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Components_.Dashboard.Views.FullDetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Components /Dashboard/Views/FullDetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Components /Dashboard/Views/FullDetailsPage.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Components /Dashboard/Views/ProductProfileCheckoutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Components_.Dashboard.Views.ProductProfileCheckoutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Components /Dashboard/Views/ProductProfileCheckoutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Components /Dashboard/Views/ProductProfileCheckoutPage.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Components /Dashboard/Views/ProductProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Components_.Dashboard.Views.ProductProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Components /Dashboard/Views/ProductProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Components /Dashboard/Views/ProductProfilePage.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Components /Dashboard/Views/RestaurantProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Components_.Dashboard.Views.RestaurantProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Components /Dashboard/Views/RestaurantProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Components /Dashboard/Views/RestaurantProfilePage.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Components /Dashboard/Views/SubProductProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Components_.Dashboard.Views.SubProductProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Components /Dashboard/Views/SubProductProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Components /Dashboard/Views/SubProductProfilePage.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Components /ForgotPassword/Views/ForgotPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Components_.ForgotPassword.Views.ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Components /ForgotPassword/Views/ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Components /ForgotPassword/Views/ForgotPasswordPage.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Components /ForgotPassword/Views/VerifyEmailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Components_.ForgotPassword.Views.VerifyEmailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Components /ForgotPassword/Views/VerifyEmailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Components /ForgotPassword/Views/VerifyEmailPage.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Components /Logins/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Components_.Logins.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Components /Logins/Views/LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Components /Logins/Views/LoginPage.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Components /Registrations/Views/RegistrationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Components_.Registrations.Views.RegistrationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Components /Registrations/Views/RegistrationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Components /Registrations/Views/RegistrationPage.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Resources/Styles/Buttons.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Resources.Styles.Buttons.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Buttons.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Buttons.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Resources/Styles/Entries.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Resources.Styles.Entries.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Entries.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Entries.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Resources/Styles/Font.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Resources.Styles.Font.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Font.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Font.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Resources/Styles/Imagess.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Resources.Styles.Imagess.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Imagess.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Imagess.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Resources/Styles/Labels.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Resources.Styles.Labels.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Labels.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Labels.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Resuable/CustomDetailsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Resuable.CustomDetailsView.xaml
+build_metadata.AdditionalFiles.TargetPath = Resuable/CustomDetailsView.xaml
+build_metadata.AdditionalFiles.RelativePath = Resuable/CustomDetailsView.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Resuable/CustomEntry.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Resuable.CustomEntry.xaml
+build_metadata.AdditionalFiles.TargetPath = Resuable/CustomEntry.xaml
+build_metadata.AdditionalFiles.RelativePath = Resuable/CustomEntry.xaml
+
+[/Users/administrator/Desktop/TakeAway/TakeAway/Resuable/CustomFrame.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TakeAway.Resuable.CustomFrame.xaml
+build_metadata.AdditionalFiles.TargetPath = Resuable/CustomFrame.xaml
+build_metadata.AdditionalFiles.RelativePath = Resuable/CustomFrame.xaml

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:resx="clr-namespace:TakeAway.Resx"
+            xmlns:cf="clr-namespace:TakeAway.Resuable"
+            NavigationPage.HasNavigationBar="False"
+             x:Class="TakeAway.Components.Dashboard.Views.DashbaordPage"
+             >
+
+        <Grid Margin="20,20,20,-40"
+              >
+            <Grid ColumnDefinitions="*,*,*" >
+                
+                <Image
+                    Grid.Column="0"
+                    Style="{DynamicResource CybeyLogo}"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start"/>
+                <Image
+                     Grid.Column="1"
+                    Style="{DynamicResource ListMenu}"
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="Center"/>
+                <Image
+                     Grid.Column="2"
+                     HorizontalOptions="End"
+                     VerticalOptions="Start"
+                    Style="{DynamicResource Basket}"/>
+
+          <Line Grid.Row="0"
+                x:Name="line"
+                Grid.ColumnSpan="3"
+               Margin="0,40,0,-10"
+              Style="{DynamicResource DashLine}"/>
+         </Grid>
+          <CollectionView
+                Margin="0,40"
+                Grid.Row="1"
+              SelectionMode="Single"
+              ItemsSource="{Binding LatestItems}"
+              SelectionChanged="CollectionView_SelectionChanged"
+              >
+              <CollectionView.ItemsLayout>
+                  <LinearItemsLayout Orientation="Vertical"
+                                />
+              </CollectionView.ItemsLayout>
+              <CollectionView.Header>
+                <VerticalStackLayout>
+                   <Frame Grid.Row="2"
+                BackgroundColor="{DynamicResource FrameGrayColor}"
+                Margin="0,20,0,20"
+                CornerRadius="30">
+            <Grid RowDefinitions="Auto,Auto,Auto"
+                    Padding="0"
+                    Margin="0,-15"
+                    >
+            <Label
+                    Grid.Row="0"
+                    Text="{x:Static resx:AppResources.Dine}"
+                 Style="{DynamicResource Font12BlackColorInter}"
+                    HorizontalTextAlignment="Start"
+                    Margin="0,2"
+                    />
+            <Label
+                    Grid.Row="0"
+                    Text="{x:Static resx:AppResources.In}"
+                    HorizontalTextAlignment="End"
+                    Margin="0,2"
+                    />
+                 <Line Grid.Row="1" 
+              Style="{DynamicResource DashLine}"/>
+           
+            <Label Grid.Row="2"
+                    Margin="0,5"
+                    HorizontalTextAlignment="Start"
+                    Text="{x:Static resx:AppResources.BurgerKing}"/>
+            <ImageButton
+                    Margin="0,-1,50,0"
+                    Grid.Row="2"
+                    HeightRequest="30"
+                    Source="alarm"
+                    HorizontalOptions="End"/>
+
+            <Label
+                    Grid.Row="2"
+                    Text="1H 15M"
+                Style="{DynamicResource Font17ReguarBlackColor}"
+                    HorizontalTextAlignment="End"
+                    Margin="-1,-3"
+                    />
+            </Grid>
+      </Frame>
+      <StackLayout
+            Grid.Row="3">
+                <CarouselView x:Name="slider"
+                                ItemsSource="{Binding LatestItems}"
+                                IndicatorView="IndicatorView"
+                                HeightRequest="200"
+                                Scrolled="slider_Scrolled">
+                            <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup Name="FadeOutStates">
+                                <VisualState Name="Visible">
+                                    <VisualState.Setters>
+                                        <Setter Property="Opacity" Value="1" TargetName="slider" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState Name="Hidden">
+                                    <VisualState.Setters>
+                                        <Setter Property="Opacity" Value="0" TargetName="slider" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                <CarouselView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" />
+                </CarouselView.ItemsLayout>
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame IsClippedToBounds="True"
+                                  
+                                    Padding="0"
+                                    HasShadow="True"
+                                    BorderColor="Black"
+                                    CornerRadius="30">
+                                <Image Source="{Binding Image}" Aspect="Fill"/>
+                            </Frame>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <IndicatorView x:Name="IndicatorView"
+                                IndicatorColor="{DynamicResource LightgrayColor}"
+                                SelectedIndicatorColor="{DynamicResource BlueTextColor}"
+                                IndicatorSize="10"
+                                MaximumVisible="5"
+                                Margin="10"
+                                HorizontalOptions="Center"/>
+      </StackLayout>
+                    <Line Grid.Row="4"
+              Style="{DynamicResource DashLine}"/>
+          <Grid Grid.Row="3"
+                 >
+                  <Image
+                  Grid.Column="1"
+                  HeightRequest="30"
+                  HorizontalOptions="StartAndExpand"
+                  Source="search"/>
+                 <CollectionView
+                     Grid.Column="2"
+                                 x:Name="CvCategories"
+                                    ItemsSource="{Binding LatestItems }"
+                                    Margin="40,10,0,0"
+                                    SelectionMode="Single"
+                                    >
+                 <CollectionView.ItemsLayout>
+                 <LinearItemsLayout Orientation="Horizontal"/>
+                 </CollectionView.ItemsLayout>
+
+                 <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <Frame Padding="0"
+                                                CornerRadius="100"
+                                                IsClippedToBounds="True"
+                                                Margin="7,0,7,0"
+                                                HeightRequest="35"
+                                                WidthRequest="100"
+                                                BackgroundColor="{DynamicResource LightgrayColor}"
+                                                BorderColor="{ DynamicResource LightgrayColor }"
+                                                VerticalOptions="Center">
+
+                                <Label Style="{ DynamicResource Font18BlackColorAnton}"
+                                                HorizontalTextAlignment="Center"
+                                                VerticalTextAlignment="Center"
+                                                Text="{Binding RestaurantName}"/>
+                            </Frame>
+
+                        </VerticalStackLayout>
+
+                     </DataTemplate>
+                 </CollectionView.ItemTemplate>
+                 </CollectionView>
+              </Grid>
+                      <Label
+                            Text="{x:Static resx:AppResources.Restaurants}"
+                             Style="{DynamicResource Font39BlackColor}"/>
+                       <Line 
+              Style="{DynamicResource DashLine}"/>
+                            </VerticalStackLayout>
+              </CollectionView.Header>
+              <CollectionView.ItemTemplate>
+                 <DataTemplate>
+                     <StackLayout>
+                        <cf:CustomFrame
+                            MainImageSource="{Binding Image}"
+                            StarImageSource="star"
+                            MainText="{Binding RestaurantName}"
+                            CompassImageSource="compass"
+                            AddressText="{Binding RestaurantAddress}"
+                            AlarmImageSource="alarm"
+                            LeftText="{Binding Time}"
+                            RightText="{Binding RatingStar}"
+                            CenterText="{Binding OpenRestaurantTime}"
+                            VectorImageSource="Vector"
+                           >
+                            <cf:CustomFrame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={x:Reference CvCategories}, Path=BindingContext.ItemTappedCommand}"
+                                                      CommandParameter="{Binding .}"/>
+
+                            </cf:CustomFrame.GestureRecognizers>
+
+                        </cf:CustomFrame>
+                          </StackLayout>
+                 </DataTemplate>
+                 </CollectionView.ItemTemplate>
+          </CollectionView>
+            </Grid>
+
+   
+</ContentPage>

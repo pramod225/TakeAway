@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary
+        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+     <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Colors.xaml" />
+         <ResourceDictionary Source="Font.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    <Style x:Key="Font14RegularTextColor" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource  BlueTextColor}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="LineHeight" Value="2"/>
+    </Style>
+    <Style x:Key="StackLayoutBackgroundBlurColor" TargetType="StackLayout">
+        <Setter Property="VerticalOptions" Value="End"/>
+        <Setter Property="BackgroundColor" Value="{DynamicResource  BlurWhiteColor}"/>
+        <Setter Property="HeightRequest" Value="160"/>
+    </Style>
+    <Style x:Key="Font77BlackColor" TargetType="Label">
+        <Setter Property="FontSize" Value="70"/>
+        <Setter Property="FontFamily" Value="{DynamicResource TextRegular}"/>
+        <Setter Property="TextColor" Value="{DynamicResource BlackTextColor}"/>
+    </Style>
+     <Style x:Key="Font44BlackColor" TargetType="Label">
+        <Setter Property="FontSize" Value="30"/>
+         <Setter Property="FontFamily" Value="{DynamicResource TextRegular}"/>
+        <Setter Property="TextColor" Value="{DynamicResource  BlackTextColor}"/>
+         <Setter Property="TextDecorations" Value="Underline"/>
+    </Style>
+     <Style x:Key="Font54BlackColor" TargetType="Label">
+        <Setter Property="FontSize" Value="54"/>
+         <Setter Property="FontFamily" Value="{DynamicResource TextRegular}"/>
+        <Setter Property="TextColor" Value="{DynamicResource   BlackLightColor}"/>
+    </Style>
+     <Style x:Key="Font18BlackColor" TargetType="Label">
+        <Setter Property="FontSize" Value="14"/>
+         <Setter Property="FontFamily" Value="{DynamicResource TextRegularInter}"/>
+        <Setter Property="TextColor" Value="{DynamicResource    BlackTextColor}"/>
+    </Style>
+    <Style x:Key="Font39BlackColor" TargetType="Label">
+        <Setter Property="FontSize" Value="39"/>
+         <Setter Property="FontFamily" Value="{DynamicResource TextRegular}"/>
+        <Setter Property="TextColor" Value="{DynamicResource  BlackLightColor}"/>
+    </Style>
+    <Style x:Key="Font30BlackColor" TargetType="Label">
+        <Setter Property="FontSize" Value="30"/>
+         <Setter Property="FontFamily" Value="{DynamicResource TextRegular}"/>
+        <Setter Property="TextColor" Value="{DynamicResource  BlackLightColor}"/>
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+    </Style>
+     <Style x:Key="Font18BlackColorAnton" TargetType="Label">
+        <Setter Property="FontSize" Value="20"/>
+         <Setter Property="FontFamily" Value="{DynamicResource TextRegular}"/>
+        <Setter Property="TextColor" Value="{DynamicResource  BlackLightColor}"/>
+    </Style>
+     <Style x:Key="Font17BlackColorInter" TargetType="Label">
+        <Setter Property="FontSize" Value="17"/>
+         <Setter Property="FontFamily" Value="{DynamicResource TextBold}"/>
+        <Setter Property="TextColor" Value="{DynamicResource  BlackLightColor}"/>
+    </Style>
+
+     <Style x:Key="Font17ReguarBlackColor" TargetType="Label">
+        <Setter Property="FontSize" Value="17"/>
+         <Setter Property="FontFamily" Value="{DynamicResource TextRegular}"/>
+        <Setter Property="TextColor" Value="{DynamicResource  BlackLightColor}"/>
+    </Style>
+
+    <Style x:Key="Font12BlackColor" TargetType="Label">
+        <Setter Property="FontSize" Value="12"/>
+         <Setter Property="FontFamily" Value="{DynamicResource TextRegularInter}"/>
+        <Setter Property="TextColor" Value="{DynamicResource BlackTextColor}"/>
+    </Style>
+
+     <Style x:Key="Font12BlackColorInter" TargetType="Label">
+        <Setter Property="FontSize" Value="12"/>
+         <Setter Property="FontFamily" Value="{DynamicResource TextBoldInter}"/>
+        <Setter Property="TextColor" Value="{DynamicResource BlackTextColor}"/>
+    </Style>
+     <Style x:Key="Font30EllipseBlackColor" TargetType="Label">
+        <Setter Property="FontSize" Value="30"/>
+         <Setter Property="FontFamily" Value="{DynamicResource TextRegular}"/>
+        <Setter Property="TextColor" Value="{DynamicResource  BlackLightColor}"/>
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        <Setter Property="BackgroundColor" Value="{DynamicResource EllipseColor}"/>
+    </Style>
+
+</ResourceDictionary>
+
+

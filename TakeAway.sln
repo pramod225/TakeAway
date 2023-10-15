@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 17.0.31611.283
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakeAway", "TakeAway\TakeAway.csproj", "{C04B7514-73BE-4835-91DA-0FB63C8B9553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeAway.Model", "TakeAway.Model\TakeAway.Model.csproj", "{4211120B-4056-484A-8F3D-F31494C01167}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C04B7514-73BE-4835-91DA-0FB63C8B9553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04B7514-73BE-4835-91DA-0FB63C8B9553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04B7514-73BE-4835-91DA-0FB63C8B9553}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C04B7514-73BE-4835-91DA-0FB63C8B9553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04B7514-73BE-4835-91DA-0FB63C8B9553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C04B7514-73BE-4835-91DA-0FB63C8B9553}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4211120B-4056-484A-8F3D-F31494C01167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4211120B-4056-484A-8F3D-F31494C01167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4211120B-4056-484A-8F3D-F31494C01167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4211120B-4056-484A-8F3D-F31494C01167}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TakeAway</name>
+    </assembly>
+    <members>
+        <member name="T:TakeAway.Components.Base.ViewModels.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:TakeAway.Components.Base.ViewModels.MainViewModel.loginCommand">
+            <summary>The backing field for <see cref="P:TakeAway.Components.Base.ViewModels.MainViewModel.LoginCommand"/>.</summary>
+        </member>
+        <member name="P:TakeAway.Components.Base.ViewModels.MainViewModel.LoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TakeAway.Components.Base.ViewModels.MainViewModel.Login"/>.</summary>
+        </member>
+        <member name="F:TakeAway.Components.Base.ViewModels.MainViewModel.registerCommand">
+            <summary>The backing field for <see cref="P:TakeAway.Components.Base.ViewModels.MainViewModel.RegisterCommand"/>.</summary>
+        </member>
+        <member name="P:TakeAway.Components.Base.ViewModels.MainViewModel.RegisterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TakeAway.Components.Base.ViewModels.MainViewModel.Register"/>.</summary>
+        </member>
+        <member name="T:TakeAway.Components.DashBoard.ViewModels.DashBoardViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TakeAway.Components.DashBoard.ViewModels.DashBoardViewModel.LatestItems">
+            <inheritdoc cref="F:TakeAway.Components.DashBoard.ViewModels.DashBoardViewModel._latestItems"/>
+        </member>
+        <member name="P:TakeAway.Components.DashBoard.ViewModels.DashBoardViewModel.IsFavourite">
+            <inheritdoc cref="F:TakeAway.Components.DashBoard.ViewModels.DashBoardViewModel._isFavourite"/>
+        </member>
+        <member name="F:TakeAway.Components.DashBoard.ViewModels.DashBoardViewModel.itemTappedCommandCommand">
+            <summary>The backing field for <see cref="P:TakeAway.Components.DashBoard.ViewModels.DashBoardViewModel.ItemTappedCommandCommand"/>.</summary>
+        </member>
+        <member name="P:TakeAway.Components.DashBoard.ViewModels.DashBoardViewModel.ItemTappedCommandCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TakeAway.Components.DashBoard.ViewModels.DashBoardViewModel.ItemTappedCommand"/>.</summary>
+        </member>
+        <member name="T:TakeAway.Components.Logins.ViewModels.LoginsViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TakeAway.Components.Logins.ViewModels.LoginsViewModel.Login">
+            <inheritdoc cref="F:TakeAway.Components.Logins.ViewModels.LoginsViewModel._login"/>
+        </member>
+        <member name="F:TakeAway.Components.Logins.ViewModels.LoginsViewModel.forgotPasswordCommand">
+            <summary>The backing field for <see cref="P:TakeAway.Components.Logins.ViewModels.LoginsViewModel.ForgotPasswordCommand"/>.</summary>
+        </member>
+        <member name="P:TakeAway.Components.Logins.ViewModels.LoginsViewModel.ForgotPasswordCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TakeAway.Components.Logins.ViewModels.LoginsViewModel.ForgotPassword"/>.</summary>
+        </member>
+        <member name="F:TakeAway.Components.Logins.ViewModels.LoginsViewModel.signUpCommand">
+            <summary>The backing field for <see cref="P:TakeAway.Components.Logins.ViewModels.LoginsViewModel.SignUpCommand"/>.</summary>
+        </member>
+        <member name="P:TakeAway.Components.Logins.ViewModels.LoginsViewModel.SignUpCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TakeAway.Components.Logins.ViewModels.LoginsViewModel.SignUp"/>.</summary>
+        </member>
+        <member name="F:TakeAway.Components.Logins.ViewModels.LoginsViewModel.loginsCommand">
+            <summary>The backing field for <see cref="P:TakeAway.Components.Logins.ViewModels.LoginsViewModel.LoginsCommand"/>.</summary>
+        </member>
+        <member name="P:TakeAway.Components.Logins.ViewModels.LoginsViewModel.LoginsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TakeAway.Components.Logins.ViewModels.LoginsViewModel.Logins"/>.</summary>
+        </member>
+        <member name="T:TakeAway.Components.Registration.ViewModels.RegisterViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:TakeAway.Components.Registration.ViewModels.RegisterViewModel.Register">
+            <inheritdoc cref="F:TakeAway.Components.Registration.ViewModels.RegisterViewModel._register"/>
+        </member>
+        <member name="F:TakeAway.Components.Registration.ViewModels.RegisterViewModel.saveCommand">
+            <summary>The backing field for <see cref="P:TakeAway.Components.Registration.ViewModels.RegisterViewModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:TakeAway.Components.Registration.ViewModels.RegisterViewModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TakeAway.Components.Registration.ViewModels.RegisterViewModel.Save"/>.</summary>
+        </member>
+        <member name="T:TakeAway.Resx.AppResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+              This class was generated by MSBuild using the GenerateResource task.
+              To add or remove a member, edit your .resx file then rerun MSBuild.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.AtleastSixCharacter">
+            <summary>
+              Looks up a localized string similar to At least 6 characters.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.BurgerKing">
+            <summary>
+              Looks up a localized string similar to BURGER KING.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.Cybey2022">
+            <summary>
+              Looks up a localized string similar to @ CYBEY, 2022.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.Dine">
+            <summary>
+              Looks up a localized string similar to DINE.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.Email">
+            <summary>
+              Looks up a localized string similar to Email.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.EnterYourEmail">
+            <summary>
+              Looks up a localized string similar to Enter Your Email.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.FirstPageDescription">
+            <summary>
+              Looks up a localized string similar to ENJOY FRESHLY MADE FOOD..
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.Foods">
+            <summary>
+              Looks up a localized string similar to Foods.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.ForgotPassword">
+            <summary>
+              Looks up a localized string similar to Forgot Password?.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.In">
+            <summary>
+              Looks up a localized string similar to IN:.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.Login">
+            <summary>
+              Looks up a localized string similar to LOGIN.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.Name">
+            <summary>
+              Looks up a localized string similar to Name.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.OneLowercaseLetter">
+            <summary>
+              Looks up a localized string similar to 1 lowercase letter.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.OneNumber">
+            <summary>
+              Looks up a localized string similar to 1 Number.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.OneSpecialCharacter">
+            <summary>
+              Looks up a localized string similar to 1 special character.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.OneUppercaseLetter">
+            <summary>
+              Looks up a localized string similar to 1 uppercase letter.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.Otp">
+            <summary>
+              Looks up a localized string similar to OTP.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.Password">
+            <summary>
+              Looks up a localized string similar to Password.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.PhoneNo">
+            <summary>
+              Looks up a localized string similar to Phone No.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.Register">
+            <summary>
+              Looks up a localized string similar to REGISTER.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.Restaurants">
+            <summary>
+              Looks up a localized string similar to RESTAURANTS.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.SendLink">
+            <summary>
+              Looks up a localized string similar to Send Link.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.SignUp">
+            <summary>
+              Looks up a localized string similar to Sign Up.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.TermAndCondition">
+            <summary>
+              Looks up a localized string similar to Terms Condititions.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.Verify">
+            <summary>
+              Looks up a localized string similar to Verify.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.VerifyEmail">
+            <summary>
+              Looks up a localized string similar to VERIFY EMAIL.
+            </summary>
+        </member>
+        <member name="P:TakeAway.Resx.AppResources.WhenYouAreReady">
+            <summary>
+              Looks up a localized string similar to READY WHEN YOU ARE.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.LatestItems">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "LatestItems" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsFavourite">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsFavourite" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Login">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Login" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Register">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Register" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.LatestItems">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "LatestItems" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsFavourite">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsFavourite" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Login">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Login" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Register">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Register" generated properties.</summary>
+        </member>
+    </members>
+</doc>
